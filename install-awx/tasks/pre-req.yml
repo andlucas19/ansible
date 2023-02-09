@@ -4,7 +4,6 @@
 - name: Install a list of packages
   yum:
     pkg:
-    - yum-transport-https
     - ca-certificates
     - curl
     - git

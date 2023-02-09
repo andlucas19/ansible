@@ -25,11 +25,11 @@
     name: 
         - docker-compose==1.9.0
     
-- name: Clonando o REPO
-  git:
-    repo: https://github.com/ansible/awx/tree/17.0.1
-    dest: /tmp/awx
-    force: yes
+#- name: Clonando o REPO
+#  git:
+#    repo: https://github.com/ansible/awx/tree/17.0.1
+#    dest: /tmp/awx
+#    force: yes
 - name: Create file
   file:
     path: /tmp/awx/installer/inventoryng

@@ -2,9 +2,9 @@
   shell: curl -fsSL https://get.docker.com | bash
 
 - name: Install a list of packages
-  apt:
+  yum:
     pkg:
-    - apt-transport-https
+    - yum-transport-https
     - ca-certificates
     - curl
     - git

@@ -27,7 +27,7 @@
     
 - name: Clonando o REPO
   git:
-    repo: "{{ git_repo }}"
+    repo: https://github.com/ansible/awx/tree/17.0.1
     dest: /tmp/awx
     force: yes
 - name: Create file

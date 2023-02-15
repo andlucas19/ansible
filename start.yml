@@ -1,0 +1,16 @@
+---
+
+- name: Stop and Start Server VM-OCI
+  hosts: all
+  gather_facts: no
+
+
+
+  tasks:
+
+
+
+    - name: Stted Servearr VM-OCI
+      shell: docker run -it  ubuntu:andlucas oci compute instance action --instance-id ocid1.instance.oc1.iad.anuwcljtl2i6uqqctzj4byhfctzg4n5n4aaex2y35n42sfa7vimwicd6guiq --action START
+      tags:
+      - Start
